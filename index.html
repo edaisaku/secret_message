@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Secret message</title>
+        <!-- materialize library -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <style>
+            .row{ margin-top: 20vh;}
+            h2{
+                margin-top: 0;
+            }
+        </style>
+    </head>
+
+    <body>
+    <div class="row">
+        <div class="col s8 offset-s2">
+            <div class="card-panel hide messageShow">
+                <h2></h2>
+                <div>
+                    <a href="./index.html">Create your own secret message</a>
+                </div>
+            </div>
+            <div class="card-panel messageInput">
+                <form action="">
+                    <label for="">Enter a message</label>
+                    <input id="messageInput" type="text" >
+                    <button type="submit" class="btn waves-effect waves-light">Create secret message</button>
+                </form>
+            </div>
+            <div class="card-panel hide secret">
+                Share this link to a friend
+                <input id="linkInput" type="text">
+            </div>
+           
+        </div>
+    </div>
+    </body>
+    <script src="index.js"></script>
+</html>
